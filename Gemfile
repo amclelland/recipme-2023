@@ -31,9 +31,7 @@ gem "jbuilder"
 gem 'haml'
 gem 'sassc-rails'
 gem 'pg'
-
-
-
+gem 'annotate'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
