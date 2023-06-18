@@ -1,0 +1,6 @@
+= simple_form_for @meal || Meal.new do |f|
+  = f.input :name
+  = f.input :recipe_url, as: :string
+  = f.input :image_url, as: :string
+
+  = f.submit

@@ -1,0 +1,11 @@
+%h2 Allan and Christin's Cool Meal Ideas
+
+= link_to 'new', new_meal_path
+
+- @meals.each do |meal|
+  %p= meal.name
+  %p= meal.recipe_url
+  %p= meal.image_url
+  = link_to 'Edit', edit_meal_path(meal)
+  = link_to 'Delete', meal_path(meal), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }
+  %hr

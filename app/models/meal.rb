@@ -10,5 +10,5 @@
 #  updated_at :datetime         not null
 #
 class Meal < ApplicationRecord
-
+  validates_presence_of :name
 end
